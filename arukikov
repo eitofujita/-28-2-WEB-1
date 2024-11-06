@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Основные стили */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    text-decoration: none;
+    background-color: #2F4F4F;
+}
+
+/* Шапка (Header) */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(#FFFFFF, #C0C0C0);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoimg {
+    width: 100px;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #696969;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+ul a:hover {
+    background-color: #59666b;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Основной контент (Main) */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.color1 {
+    background-color: #22e7ee;
+}
+
+.color2 {
+    background-color: #d870be;
+}
+
+/* Форма */
+.forma {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 700px;
+    width: 100%;
+    background: linear-gradient(to top, #808080, #A9A9A9, #DCDCDC);
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.forma h1 {
+    align-self: center;
+}
+
+.forma form {
+    align-self: center;
+    max-width: 650px;
+    width: 100%;
+}
+
+.forma label {
+    display: flex;
+    align-items: center;
+    margin-right: 500px;
+}
+
+.forma input {
+    max-width: 600px;
+    width: 100%;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.pol {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pol input {
+    width: 50px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.forma select, .forma textarea {
+    height: 70px;
+    border-radius: 6px;
+    padding: 10px;
+    max-width: 600px;
+    width: 100%;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+}
+
+.checkbox input {
+    margin-right: 30px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+/* Футер (Footer) */
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #696969;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* Адаптивные стили (Media Query) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .table-container, .forma, main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: medium;
+    }
+}
